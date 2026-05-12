@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #eef2ff, #f4f7ff);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2a38;
+}
+
+.container-detalhe {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.painel-detalhe {
+  width: 100%;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  padding: 32px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.topo-detalhe {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.topo-detalhe h2 {
+  margin: 0;
+  color: #1a1a5e;
+  font-size: 26px;
+}
+
+.topo-acoes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.topo-acoes button,
+.bloco-status button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(270deg, #3e3eb9, #3a3aff);
+  box-shadow: 0 6px 15px rgba(58, 58, 255, 0.4);
+  transition: 0.2s;
+  display: flex;
+  gap: 7px;
+}
+
+.topo-acoes button:hover,
+.bloco-status button:hover {
+  transform: translateY(-2px);
+}
+
+.bloco-info {
+  margin-bottom: 32px;
+}
+
+.bloco-info h3 {
+  margin-top: 28px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  color: #1a1a5e;
+  border-bottom: 1px solid rgba(58, 58, 255, 0.2);
+  padding-bottom: 6px;
+}
+
+.bloco-info h3:first-child {
+  margin-top: 0;
+}
+
+.bloco-info p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+.bloco-status {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bloco-status h3 {
+  margin: 0 0 10px 0;
+  color: #1a1a5e;
+  font-size: 16px;
+}
+
+.bloco-status label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+.bloco-status input,
+.bloco-status select,
+.bloco-status textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #1f2a38;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  outline: none;
+}
+
+.bloco-status textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.status-os {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-pendente {
+  background-color: #fff8e1;
+  color: #a67c00;
+}
+
+.status-recusada {
+  background-color: #fbe9e7;
+  color: #b23b2a;
+}
+
+.status-aprovada {
+  background-color: #e6f4ea;
+  color: #1f7a3d;
+}
+
+.status-finalizada {
+  background-color: #e8f1fd;
+  color: #1f5fa8;
+}
